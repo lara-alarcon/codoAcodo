@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Passion+One:wght@400;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.fondoHeader {
+  background-color: #D75253;
+}
+
+body {
+  background: #4E4060;
+  font-family: "Passion One", sans-serif;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
+h2 {
+  color: #FFF;
+  font-size: 45px;
+}
+
+.texto-resaltado {
+  font-weight: 700;
+
+  --tw-text-opacity: 1;
+  color: rgb(254 178 54/var(--tw-text-opacity))
+}
+
+#banner {
+  background-image: url('../img/Fondo.jpeg');
+  background-size: auto;
+  background-position: center;
+  height: 600px;
+  box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+}
+
+#banner h1 {
+  font-size: 80px;
+}
+
+#banner h2 {
+  font-size: 45px;
+  -webkit-text-stroke: 0.4px black;
+}
+
+.card-banner {
+  margin: auto;
+  text-align: center;
+  padding: 0px 160px;
+
+}
+
+
+.links a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 17px;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links a:hover {
+  color: #fde82b;
+}
+
+#logo a {
+  text-decoration: none;
+  list-style: none;
+  color: #FFF;
+}
+
+#logo {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#logo:hover {
+  animation: heartBeat;
+  animation-duration: 2s;
+}
+
+.boton-inicio-sesion {
+  background-color: #4E4060;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.boton-inicio-sesion:hover {
+  border: 2px solid #FFF;
+}
+
+
+#buscador {
+  height: 300px;
+}
+
+
+.game-item {
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 450ms;
+}
+
+.game-item-img {
+  width: 200px;
+  height: 300px;
+  border-radius: 30px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.game-item-detail {
+  bottom: -100%;
+  padding: 15px;
+  position: absolute;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2000px rgba(5, 5, 5, 0.5);
+  transition: bottom 0.5s ease-in-out;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  color: white;
+}
+
+.game-item:hover {
+  opacity: 0.9;
+}
+
+.game-item:hover .game-item-detail {
+  bottom: 0;
+}
+
+.game-item-detail-title {
+  line-height: 1.2em;
+}
+
+.game-item-detail-subtitle {
+  font-size: 13px;
+  margin: 3px 0px;
+}
+
+#contenedor {
+  max-width: 1200px;
+  margin: 120px auto;
+}
+
+.games-scroller {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 40px 0px;
+  scrollbar-color: #2C2728 #D75253;
+  
+}
+
+
+
+.game-item-v2 {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 450ms all;
+}
+
+.game-item-img-v2 {
+  width: 170px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.game-item-detail-v2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  color: white;
+}
+
+.game-item-detail-title-v2 {
+  margin: 5px 0px 0px 0px;
+}
+
+.game-item-detail-title-v2:hover {
+  color: #E4C26F;
+}
+
+.game-item-detail-subtitle-v2 {
+  font-size: 15px;
+  margin: 3px 0px;
+}
+
+
+#footer {
+  background-color: #D75253;
+  height: 50px;
+  padding: 1rem;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem 0 1rem;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+  color: #2C2728;
+}
+
+#footer li {
+  list-style: none;
+}
+
+.fondoRegistro,
+.fondoLogin {
+  background: url("../img/FondoRL.png");
+}
+
+.registroCentrado {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 4px;
+  padding: 20px 70px;
+  width: 450px;
+  transform: translate(-50%, 10%);
+  background: rgba(42, 42, 42, 1);
+}
+
+.logintroCentrado {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 4px;
+  padding: 20px 70px;
+  width: 450px;
+  transform: translate(-50%, 50%);
+  background: rgba(42, 42, 42, 1);
+}
